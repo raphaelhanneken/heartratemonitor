@@ -1,0 +1,926 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E4670491E2A64AB00ACD2E1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4670481E2A64AB00ACD2E1 /* HealthKit.framework */; };
+		8E46704D1E2A6B4800ACD2E1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E46704C1E2A6B4800ACD2E1 /* HealthKit.framework */; };
+		8E527F011E2A34A000458408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E527F001E2A34A000458408 /* AppDelegate.swift */; };
+		8E527F031E2A34A000458408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E527F021E2A34A000458408 /* ViewController.swift */; };
+		8E527F061E2A34A000458408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E527F041E2A34A000458408 /* Main.storyboard */; };
+		8E527F081E2A34A000458408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E527F071E2A34A000458408 /* Assets.xcassets */; };
+		8E527F0B1E2A34A000458408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E527F091E2A34A000458408 /* LaunchScreen.storyboard */; };
+		8E527F161E2A34A000458408 /* BeatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E527F151E2A34A000458408 /* BeatsTests.swift */; };
+		8E527F211E2A34A100458408 /* BeatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E527F201E2A34A100458408 /* BeatsUITests.swift */; };
+		8E527F371E2A363600458408 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E527F351E2A363600458408 /* Interface.storyboard */; };
+		8E527F391E2A363600458408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E527F381E2A363600458408 /* Assets.xcassets */; };
+		8E527F401E2A363600458408 /* Beats Companion Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8E527F3F1E2A363600458408 /* Beats Companion Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8E527F471E2A363700458408 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E527F461E2A363700458408 /* InterfaceController.swift */; };
+		8E527F491E2A363700458408 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E527F481E2A363700458408 /* ExtensionDelegate.swift */; };
+		8E527F4B1E2A363700458408 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E527F4A1E2A363700458408 /* NotificationController.swift */; };
+		8E527F4D1E2A363700458408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E527F4C1E2A363700458408 /* Assets.xcassets */; };
+		8E527F511E2A363700458408 /* Beats Companion.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8E527F331E2A363600458408 /* Beats Companion.app */; };
+		8EC0A20D1E2A55C200619375 /* HeartRateMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC0A20C1E2A55C200619375 /* HeartRateMonitor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E527F121E2A34A000458408 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E527EF51E2A349F00458408 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E527EFC1E2A349F00458408;
+			remoteInfo = Beats;
+		};
+		8E527F1D1E2A34A100458408 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E527EF51E2A349F00458408 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E527EFC1E2A349F00458408;
+			remoteInfo = Beats;
+		};
+		8E527F411E2A363600458408 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E527EF51E2A349F00458408 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E527F3E1E2A363600458408;
+			remoteInfo = "Beats Companion Extension";
+		};
+		8E527F4F1E2A363700458408 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E527EF51E2A349F00458408 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E527F321E2A363600458408;
+			remoteInfo = "Beats Companion";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8E527F551E2A363700458408 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8E527F401E2A363600458408 /* Beats Companion Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E527F591E2A363700458408 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8E527F511E2A363700458408 /* Beats Companion.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8E4670481E2A64AB00ACD2E1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		8E46704A1E2A64AC00ACD2E1 /* Beats Companion Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Beats Companion Extension.entitlements"; sourceTree = "<group>"; };
+		8E46704B1E2A6B4800ACD2E1 /* Beats.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Beats.entitlements; sourceTree = "<group>"; };
+		8E46704C1E2A6B4800ACD2E1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		8E527EFD1E2A34A000458408 /* Beats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beats.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E527F001E2A34A000458408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E527F021E2A34A000458408 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E527F051E2A34A000458408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E527F071E2A34A000458408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E527F0A1E2A34A000458408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E527F0C1E2A34A000458408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E527F111E2A34A000458408 /* BeatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeatsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E527F151E2A34A000458408 /* BeatsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatsTests.swift; sourceTree = "<group>"; };
+		8E527F171E2A34A000458408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E527F1C1E2A34A100458408 /* BeatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E527F201E2A34A100458408 /* BeatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatsUITests.swift; sourceTree = "<group>"; };
+		8E527F221E2A34A100458408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E527F331E2A363600458408 /* Beats Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beats Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E527F361E2A363600458408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8E527F381E2A363600458408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E527F3A1E2A363600458408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E527F3F1E2A363600458408 /* Beats Companion Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Beats Companion Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E527F451E2A363600458408 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8E527F461E2A363700458408 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8E527F481E2A363700458408 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8E527F4A1E2A363700458408 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8E527F4C1E2A363700458408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E527F4E1E2A363700458408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EC0A20C1E2A55C200619375 /* HeartRateMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeartRateMonitor.swift; path = ../HeartRateMonitor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E527EFA1E2A349F00458408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E46704D1E2A6B4800ACD2E1 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E527F0E1E2A34A000458408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E527F191E2A34A100458408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E527F3C1E2A363600458408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E4670491E2A64AB00ACD2E1 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E4670471E2A64AB00ACD2E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E46704C1E2A6B4800ACD2E1 /* HealthKit.framework */,
+				8E4670481E2A64AB00ACD2E1 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E527EF41E2A349F00458408 = {
+			isa = PBXGroup;
+			children = (
+				8E527EFF1E2A34A000458408 /* Beats */,
+				8E527F141E2A34A000458408 /* BeatsTests */,
+				8E527F1F1E2A34A100458408 /* BeatsUITests */,
+				8E527F341E2A363600458408 /* Beats Companion */,
+				8E527F431E2A363600458408 /* Beats Companion Extension */,
+				8E527EFE1E2A34A000458408 /* Products */,
+				8E4670471E2A64AB00ACD2E1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8E527EFE1E2A34A000458408 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E527EFD1E2A34A000458408 /* Beats.app */,
+				8E527F111E2A34A000458408 /* BeatsTests.xctest */,
+				8E527F1C1E2A34A100458408 /* BeatsUITests.xctest */,
+				8E527F331E2A363600458408 /* Beats Companion.app */,
+				8E527F3F1E2A363600458408 /* Beats Companion Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E527EFF1E2A34A000458408 /* Beats */ = {
+			isa = PBXGroup;
+			children = (
+				8E46704B1E2A6B4800ACD2E1 /* Beats.entitlements */,
+				8E527F001E2A34A000458408 /* AppDelegate.swift */,
+				8E527F301E2A35F600458408 /* Controllers */,
+				8E527F2F1E2A35E400458408 /* Storyboards */,
+				8E527F2E1E2A35BF00458408 /* Resources */,
+			);
+			path = Beats;
+			sourceTree = "<group>";
+		};
+		8E527F141E2A34A000458408 /* BeatsTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E527F151E2A34A000458408 /* BeatsTests.swift */,
+				8E527F171E2A34A000458408 /* Info.plist */,
+			);
+			path = BeatsTests;
+			sourceTree = "<group>";
+		};
+		8E527F1F1E2A34A100458408 /* BeatsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8E527F201E2A34A100458408 /* BeatsUITests.swift */,
+				8E527F221E2A34A100458408 /* Info.plist */,
+			);
+			path = BeatsUITests;
+			sourceTree = "<group>";
+		};
+		8E527F2E1E2A35BF00458408 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E527F0C1E2A34A000458408 /* Info.plist */,
+				8E527F071E2A34A000458408 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8E527F2F1E2A35E400458408 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8E527F041E2A34A000458408 /* Main.storyboard */,
+				8E527F091E2A34A000458408 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		8E527F301E2A35F600458408 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E527F021E2A34A000458408 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8E527F341E2A363600458408 /* Beats Companion */ = {
+			isa = PBXGroup;
+			children = (
+				8E527F5B1E2A365800458408 /* Storyboards */,
+				8E527F5A1E2A364100458408 /* Resources */,
+			);
+			path = "Beats Companion";
+			sourceTree = "<group>";
+		};
+		8E527F431E2A363600458408 /* Beats Companion Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8E46704A1E2A64AC00ACD2E1 /* Beats Companion Extension.entitlements */,
+				8E527F481E2A363700458408 /* ExtensionDelegate.swift */,
+				8EC0A20C1E2A55C200619375 /* HeartRateMonitor.swift */,
+				8E527F5D1E2A368500458408 /* Controllers */,
+				8E527F5C1E2A366F00458408 /* Resources */,
+				8E527F441E2A363600458408 /* Supporting Files */,
+			);
+			path = "Beats Companion Extension";
+			sourceTree = "<group>";
+		};
+		8E527F441E2A363600458408 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E527F451E2A363600458408 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E527F5A1E2A364100458408 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E527F3A1E2A363600458408 /* Info.plist */,
+				8E527F381E2A363600458408 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8E527F5B1E2A365800458408 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8E527F351E2A363600458408 /* Interface.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		8E527F5C1E2A366F00458408 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E527F4E1E2A363700458408 /* Info.plist */,
+				8E527F4C1E2A363700458408 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8E527F5D1E2A368500458408 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E527F461E2A363700458408 /* InterfaceController.swift */,
+				8E527F4A1E2A363700458408 /* NotificationController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E527EFC1E2A349F00458408 /* Beats */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E527F251E2A34A100458408 /* Build configuration list for PBXNativeTarget "Beats" */;
+			buildPhases = (
+				8E527EF91E2A349F00458408 /* Sources */,
+				8E527EFA1E2A349F00458408 /* Frameworks */,
+				8E527EFB1E2A349F00458408 /* Resources */,
+				8E527F591E2A363700458408 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E527F501E2A363700458408 /* PBXTargetDependency */,
+			);
+			name = Beats;
+			productName = Beats;
+			productReference = 8E527EFD1E2A34A000458408 /* Beats.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E527F101E2A34A000458408 /* BeatsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E527F281E2A34A100458408 /* Build configuration list for PBXNativeTarget "BeatsTests" */;
+			buildPhases = (
+				8E527F0D1E2A34A000458408 /* Sources */,
+				8E527F0E1E2A34A000458408 /* Frameworks */,
+				8E527F0F1E2A34A000458408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E527F131E2A34A000458408 /* PBXTargetDependency */,
+			);
+			name = BeatsTests;
+			productName = BeatsTests;
+			productReference = 8E527F111E2A34A000458408 /* BeatsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8E527F1B1E2A34A100458408 /* BeatsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E527F2B1E2A34A100458408 /* Build configuration list for PBXNativeTarget "BeatsUITests" */;
+			buildPhases = (
+				8E527F181E2A34A100458408 /* Sources */,
+				8E527F191E2A34A100458408 /* Frameworks */,
+				8E527F1A1E2A34A100458408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E527F1E1E2A34A100458408 /* PBXTargetDependency */,
+			);
+			name = BeatsUITests;
+			productName = BeatsUITests;
+			productReference = 8E527F1C1E2A34A100458408 /* BeatsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		8E527F321E2A363600458408 /* Beats Companion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E527F561E2A363700458408 /* Build configuration list for PBXNativeTarget "Beats Companion" */;
+			buildPhases = (
+				8E527F311E2A363600458408 /* Resources */,
+				8E527F551E2A363700458408 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E527F421E2A363600458408 /* PBXTargetDependency */,
+			);
+			name = "Beats Companion";
+			productName = "Beats Companion";
+			productReference = 8E527F331E2A363600458408 /* Beats Companion.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8E527F3E1E2A363600458408 /* Beats Companion Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E527F521E2A363700458408 /* Build configuration list for PBXNativeTarget "Beats Companion Extension" */;
+			buildPhases = (
+				8E527F3B1E2A363600458408 /* Sources */,
+				8E527F3C1E2A363600458408 /* Frameworks */,
+				8E527F3D1E2A363600458408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Beats Companion Extension";
+			productName = "Beats Companion Extension";
+			productReference = 8E527F3F1E2A363600458408 /* Beats Companion Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E527EF51E2A349F00458408 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = "Raphael Hanneken";
+				TargetAttributes = {
+					8E527EFC1E2A349F00458408 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6BP4BNZD5E;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					8E527F101E2A34A000458408 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8E527EFC1E2A349F00458408;
+					};
+					8E527F1B1E2A34A100458408 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8E527EFC1E2A349F00458408;
+					};
+					8E527F321E2A363600458408 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					8E527F3E1E2A363600458408 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6BP4BNZD5E;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8E527EF81E2A349F00458408 /* Build configuration list for PBXProject "Beats" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E527EF41E2A349F00458408;
+			productRefGroup = 8E527EFE1E2A34A000458408 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E527EFC1E2A349F00458408 /* Beats */,
+				8E527F101E2A34A000458408 /* BeatsTests */,
+				8E527F1B1E2A34A100458408 /* BeatsUITests */,
+				8E527F321E2A363600458408 /* Beats Companion */,
+				8E527F3E1E2A363600458408 /* Beats Companion Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E527EFB1E2A349F00458408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E527F0B1E2A34A000458408 /* LaunchScreen.storyboard in Resources */,
+				8E527F081E2A34A000458408 /* Assets.xcassets in Resources */,
+				8E527F061E2A34A000458408 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E527F0F1E2A34A000458408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E527F1A1E2A34A100458408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E527F311E2A363600458408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E527F391E2A363600458408 /* Assets.xcassets in Resources */,
+				8E527F371E2A363600458408 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E527F3D1E2A363600458408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E527F4D1E2A363700458408 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E527EF91E2A349F00458408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E527F031E2A34A000458408 /* ViewController.swift in Sources */,
+				8E527F011E2A34A000458408 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E527F0D1E2A34A000458408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E527F161E2A34A000458408 /* BeatsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E527F181E2A34A100458408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E527F211E2A34A100458408 /* BeatsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E527F3B1E2A363600458408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E527F4B1E2A363700458408 /* NotificationController.swift in Sources */,
+				8EC0A20D1E2A55C200619375 /* HeartRateMonitor.swift in Sources */,
+				8E527F491E2A363700458408 /* ExtensionDelegate.swift in Sources */,
+				8E527F471E2A363700458408 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E527F131E2A34A000458408 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E527EFC1E2A349F00458408 /* Beats */;
+			targetProxy = 8E527F121E2A34A000458408 /* PBXContainerItemProxy */;
+		};
+		8E527F1E1E2A34A100458408 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E527EFC1E2A349F00458408 /* Beats */;
+			targetProxy = 8E527F1D1E2A34A100458408 /* PBXContainerItemProxy */;
+		};
+		8E527F421E2A363600458408 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E527F3E1E2A363600458408 /* Beats Companion Extension */;
+			targetProxy = 8E527F411E2A363600458408 /* PBXContainerItemProxy */;
+		};
+		8E527F501E2A363700458408 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E527F321E2A363600458408 /* Beats Companion */;
+			targetProxy = 8E527F4F1E2A363700458408 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E527F041E2A34A000458408 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E527F051E2A34A000458408 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E527F091E2A34A000458408 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E527F0A1E2A34A000458408 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8E527F351E2A363600458408 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E527F361E2A363600458408 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E527F231E2A34A100458408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E527F241E2A34A100458408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E527F261E2A34A100458408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Beats/Beats.entitlements;
+				DEVELOPMENT_TEAM = 6BP4BNZD5E;
+				INFOPLIST_FILE = Beats/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.raphaelhanneken.Beats;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8E527F271E2A34A100458408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Beats/Beats.entitlements;
+				DEVELOPMENT_TEAM = 6BP4BNZD5E;
+				INFOPLIST_FILE = Beats/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.raphaelhanneken.Beats;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8E527F291E2A34A100458408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BeatsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.raphaelhanneken.BeatsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beats.app/Beats";
+			};
+			name = Debug;
+		};
+		8E527F2A1E2A34A100458408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BeatsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.raphaelhanneken.BeatsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beats.app/Beats";
+			};
+			name = Release;
+		};
+		8E527F2C1E2A34A100458408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = BeatsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.raphaelhanneken.BeatsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Beats;
+			};
+			name = Debug;
+		};
+		8E527F2D1E2A34A100458408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = BeatsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.raphaelhanneken.BeatsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Beats;
+			};
+			name = Release;
+		};
+		8E527F531E2A363700458408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Beats Companion Extension/Beats Companion Extension.entitlements";
+				DEVELOPMENT_TEAM = 6BP4BNZD5E;
+				INFOPLIST_FILE = "Beats Companion Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.raphaelhanneken.Beats.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		8E527F541E2A363700458408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Beats Companion Extension/Beats Companion Extension.entitlements";
+				DEVELOPMENT_TEAM = 6BP4BNZD5E;
+				INFOPLIST_FILE = "Beats Companion Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.raphaelhanneken.Beats.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		8E527F571E2A363700458408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Beats_Companion_Extension;
+				INFOPLIST_FILE = "Beats Companion/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = de.raphaelhanneken.Beats.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		8E527F581E2A363700458408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Beats_Companion_Extension;
+				INFOPLIST_FILE = "Beats Companion/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = de.raphaelhanneken.Beats.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E527EF81E2A349F00458408 /* Build configuration list for PBXProject "Beats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E527F231E2A34A100458408 /* Debug */,
+				8E527F241E2A34A100458408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E527F251E2A34A100458408 /* Build configuration list for PBXNativeTarget "Beats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E527F261E2A34A100458408 /* Debug */,
+				8E527F271E2A34A100458408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E527F281E2A34A100458408 /* Build configuration list for PBXNativeTarget "BeatsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E527F291E2A34A100458408 /* Debug */,
+				8E527F2A1E2A34A100458408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E527F2B1E2A34A100458408 /* Build configuration list for PBXNativeTarget "BeatsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E527F2C1E2A34A100458408 /* Debug */,
+				8E527F2D1E2A34A100458408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E527F521E2A363700458408 /* Build configuration list for PBXNativeTarget "Beats Companion Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E527F531E2A363700458408 /* Debug */,
+				8E527F541E2A363700458408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E527F561E2A363700458408 /* Build configuration list for PBXNativeTarget "Beats Companion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E527F571E2A363700458408 /* Debug */,
+				8E527F581E2A363700458408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E527EF51E2A349F00458408 /* Project object */;
+}
